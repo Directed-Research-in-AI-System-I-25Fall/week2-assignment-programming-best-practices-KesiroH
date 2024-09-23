@@ -41,6 +41,6 @@ with torch.no_grad():  # 关闭梯度计算以节省内存
         total += labels.size(0)
         correct += (predicted == labels).sum().item()  # 计算正确的预测数量
 
-# 计算准确率
+# 计算准确
 accuracy = correct / total
 print(f'准确率: {accuracy:.2f}')
